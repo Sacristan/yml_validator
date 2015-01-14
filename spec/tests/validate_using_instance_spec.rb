@@ -1,8 +1,8 @@
-# rspec spec/tests/yml_validator_spec.rb
+# rspec spec/tests/validate_using_instance_spec.rb
 
 require 'spec_helper'
 
-describe YMLValidator do
+describe "ValidateUsingInstance" do
   context "valid?" do
     context "should return false for " do
       context "binary file" do
@@ -64,4 +64,5 @@ describe YMLValidator do
       end
     end
   end
+
 end
