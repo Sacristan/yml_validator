@@ -1,5 +1,6 @@
 require 'yaml'
-require 'yml_validator/basis'
+require 'yml_validator/base'
+require 'yml_validator/helpers'
 require 'yml_validator/version'
 
-YMLValidator = YMLValidator::Basis
+YMLValidator = YMLValidator::Base
