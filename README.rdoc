@@ -1,1 +1,16 @@
-TODO
+## Usage
+
+Via object ->
+@yml_validator = YMLValidator.new "spec/fixtures/binary.yml"
+@yml_validator.valid?
+
+Oneliner ->
+YMLValidator.valid? "spec/fixtures/binary.yml"
+
+## Contribution
+
+1. Fork it ( https://github.com/Sacristan/yml_validator/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request

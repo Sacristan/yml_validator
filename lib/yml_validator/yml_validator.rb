@@ -5,6 +5,10 @@ module YMLValidator
     def initialize file_path
       @file_path = file_path
     end
+    
+    def self.valid? file_path
+      YMLValidator.new(file_path).valid?
+    end
 
     def valid?
       begin
@@ -15,4 +19,7 @@ module YMLValidator
       end
     end
   end
+
+
+
 end
