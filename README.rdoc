@@ -1,11 +1,34 @@
+# YMLValidator
+This gem ensures that file located at path truly is a valid YML file.
+Either true or false will be returned on any time of file.
+
+No dependency on file type or schemas - pure YML syntax and structure test.
+
+## Requirements
+
+Ruby 2.0.0 and greater
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'yml_validator'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install yml_validator
+
 ## Usage
+yml_validator = YMLValidator.new "spec/fixtures/file_to_validate.yml"
+yml_validator.valid?
 
-Via object ->
-@yml_validator = YMLValidator.new "spec/fixtures/binary.yml"
-@yml_validator.valid?
-
-Oneliner ->
-YMLValidator.valid? "spec/fixtures/binary.yml"
+YMLValidator.valid? "spec/fixtures/file_to_validate.yml"
 
 ## Contribution
 
