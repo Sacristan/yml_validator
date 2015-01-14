@@ -1,5 +1,5 @@
 YMLValidator
-=============
+-------
 
 This gem ensures that file located at path truly is a valid YML file.
 Either true or false will be returned on any type of file.
